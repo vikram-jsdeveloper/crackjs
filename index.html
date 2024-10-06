@@ -5,6 +5,9 @@
   <meta charset="UTF-8" />
   <link rel="icon" type="image/svg+xml" href="https://avatars.githubusercontent.com/u/104102427?v=4" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+    integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css">
   <link rel="stylesheet" href="./highlightjs-custom.css" />
   <link rel="stylesheet" href="./app.css" />
@@ -14,10 +17,64 @@
 <body>
   <header>
     <div class="container">
-      <div class="logo"><img src="./images/js-logo.svg" alt="Crack JS" /></div>
+      <div class="logo"><span>Crack</span> <img src="./images/js-logo.svg" /></div>
+      <navbar>
+        <ul>
+          <li><a href="#">Topics</a></li>
+          <li><a href="#">Coding Questions</a></li>
+          <li><a href="#">JS Articles</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </navbar>
     </div>
-  </header>
 
+  </header>
+  <main>
+    <div class="introduction-box">
+      <div class="container">
+
+        <h1>
+          Welcome to Your JavaScript Interview Prep Hub!
+        </h1>
+        <p>Hi, I’m Vikramjeet, a passionate Web developer dedicated to helping you succeed in your interview journey.
+          With extensive experience in the field, I understand the challenges that come with preparing for technical
+          interviews. This platform is designed to equip you with the skills and knowledge you need to excel in your
+          JavaScript interviews.</p>
+        <p>Here, you will find a wealth of resources, including:</p>
+        <ul>
+          <li><strong>Comprehensive Study Guides:</strong> Dive into essential JavaScript concepts, from the
+            fundamentals
+            to
+            advanced topics.</li>
+          <li><strong>Real-World Coding Challenges:</strong> Practice with coding exercises that simulate real interview
+            scenarios to boost
+            your confidence.</li>
+          <li><strong>Expert Tips & Strategies:</strong> Gain insights on how to approach interviews, showcase your
+            skills, and stand out to potential employers.</li>
+        </ul>
+        <p>Let’s embark on this journey together to master JavaScript and ace your next interview! Connect with me on
+          LinkedIn and check out my work on GitHub for more insights into my projects and expertise. Your success is
+          just around the corner!</p>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="container">
+      <ul class="socialable">
+        <li><a href="https://www.linkedin.com/in/vikramdev/" target="_blank"><img src="./images/linkedin-icon.svg"
+              alt="linkedin" /></a></li>
+        <li><a href="https://github.com/vikram-jsdeveloper" target="_blank"><img src="./images/github-icon.svg"
+              alt="github" /></a></li>
+      </ul>
+      <div class="copyright-box">
+        &copy;
+        <span id="copyright">
+          <script>document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))</script>
+        </span>
+        Crack JS
+      </div>
+    </div>
+  </footer>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
   <!-- and it's easy to individually load additional languages -->
@@ -30,6 +87,8 @@
       hljs.highlightElement(el);
     });
   </script>
+
+
 </body>
 
 </html>
