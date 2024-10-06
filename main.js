@@ -1,5 +1,6 @@
 import './app.scss';
 
+//Responsive menu
 const mobileMenu = document.getElementById('mobile-menu');
 const navMenu = document.querySelector('.nav-menu');
 
@@ -14,4 +15,10 @@ document.addEventListener('click', (event) => {
   if (!isClickInside) {
     navMenu.classList.remove('active');
   }
+});
+
+// first, find all the div.code blocks
+document.querySelectorAll('code.code').forEach((el) => {
+  // then highlight each
+  hljs.highlightElement(el);
 });

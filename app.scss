@@ -21,6 +21,7 @@ body {
   line-height: 1.5;
   margin: 0;
   padding: 0;
+  background-color: #263238;
 }
 .container {
   max-width: 1200px;
@@ -121,9 +122,10 @@ header {
     display: flex;
     align-items: center;
     gap: 10px;
-    span {
+    a {
       text-decoration: line-through;
       color: #57bab7;
+      display: inline-block;
     }
     img {
       width: 30px;
@@ -132,7 +134,6 @@ header {
 }
 
 .introduction-box {
-  background-color: #263238;
   color: #fff;
   padding: 50px 0;
   font-family: 'Source Code Pro', monospace;
@@ -180,4 +181,8 @@ footer {
     text-align: center;
     color: #263238;
   }
+}
+
+main {
+  min-height: calc(100vh - 156px);
 }
